@@ -285,18 +285,20 @@ figcaption {
   width: 100%;
   min-width: 660px;
   border-collapse: collapse;
+  border: 2px solid #65717a;
   font: 16px/1.45 Arial, Helvetica, sans-serif;
 }
 .buyers-guide caption { padding: 16px; text-align: left; font-weight: bold; }
 .buyers-guide th, .buyers-guide td {
   padding: 14px;
-  border: 1px solid var(--line);
+  border: 1px solid #9aa3a8;
   vertical-align: top;
   text-align: left;
 }
-.buyers-guide thead { background: var(--accent-dark); color: white; }
+.buyers-guide thead { background: var(--accent-dark); color: #fff; }
+.buyers-guide thead th { border-color: #fff; }
 .buyers-guide tbody th { background: var(--soft); }
-.buyers-guide tbody tr:nth-child(even) td { background: #fcfaf7; }
+.buyers-guide tbody tr:nth-child(even) td { background: #f1f4f5; }
 .buyers-guide section, .buyers-guide aside { scroll-margin-top: 24px; }
 
 @media (max-width: 680px) {
