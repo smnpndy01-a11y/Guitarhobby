@@ -248,6 +248,57 @@ figcaption {
   margin: 0;
 }
 
+/* Buyer’s Guide additions; shared page styling remains unchanged. */
+.buyers-guide .guide-contents {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 22px;
+  margin-bottom: 28px;
+  font: 16px/1.5 Arial, Helvetica, sans-serif;
+}
+
+.buyers-guide .guide-note {
+  background: var(--soft);
+  border-left: 4px solid var(--accent);
+  margin: 28px 0;
+  padding: 20px 24px;
+}
+
+.buyers-guide .guide-note h2 { margin-top: 0; }
+.buyers-guide .guide-note p:last-child { margin-bottom: 0; }
+.buyers-guide .guide-note li { margin-bottom: 14px; }
+.buyers-guide .guide-rank {
+  color: var(--accent);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.buyers-guide .guide-small { font: 15px/1.5 Arial, Helvetica, sans-serif; }
+.buyers-guide .works-cited { overflow-wrap: anywhere; }
+.buyers-guide .comparison-scroll {
+  max-width: 100%;
+  overflow-x: auto;
+  margin-bottom: 18px;
+  border: 1px solid var(--line);
+}
+.buyers-guide :focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+.buyers-guide table {
+  width: 100%;
+  min-width: 660px;
+  border-collapse: collapse;
+  font: 16px/1.45 Arial, Helvetica, sans-serif;
+}
+.buyers-guide caption { padding: 16px; text-align: left; font-weight: bold; }
+.buyers-guide th, .buyers-guide td {
+  padding: 14px;
+  border: 1px solid var(--line);
+  vertical-align: top;
+  text-align: left;
+}
+.buyers-guide thead { background: var(--accent-dark); color: white; }
+.buyers-guide tbody th { background: var(--soft); }
+.buyers-guide tbody tr:nth-child(even) td { background: #fcfaf7; }
+.buyers-guide section, .buyers-guide aside { scroll-margin-top: 24px; }
+
 @media (max-width: 680px) {
   body {
     font-size: 18px;
